@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: .75em;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+
+#cover {
+  background-image: url("../assets/coverbg.png");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  animation: fadein 1s;
+  transition: 5s ease-in;
+}
+
+@@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+
+}
+
+#cover .covertext {
+  text-align: center;
+  color: #fff;
+  padding-top: 300px;
+}
+
+.grid {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
