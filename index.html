@@ -6,38 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
 <!-- Cover-->
-<div id="cover" class="grid1">
-  <div class="covertext"><h2>We're waiting for you</h2></div>
+<div id="cover" class="grid">
+  <div class="coveraos"  data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in">
+    <div class="logo">
+      <img src="assets/logo.png" alt="" width="35%" height="35%">
+    </div>
+    <h1>AUGUST 2018</h1>
+    <a href="#section-a"><div class="btn">
+        Read More
+      </div></a>
+    </div>
 </div>
 
 <!-- Section A -->
-
-<div id="section-a" class="grid">
-  <div class="column">
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, corporis!</p>
-  </div>
-  <div class="column">
-    <h1>Hello again</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, pariatur.</p>
-  </div>
+<div id="section-a" class="grid" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
+  <div class="staff"><img src="assets/staffwaiting.png" alt="" width="100%"></div>
 </div>
 
-<div id="section-b" class="grid">
-  <div class="column">
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, corporis!</p>
+<!-- Section B
+<div id="section-b" class="gridb">
+  <div class="column1">
+    <div class="bestofdenton"><a href="http://bestofdentoncounty.com/" target="_blank"><img src="assets/bestofdenton.png" alt="" width="100%"></a></div>
+    <div class="bestofdenton"><a href="http://bestofdentoncounty.com/" target="_blank"><img src="http://bestofdentoncounty.com/wp-content/uploads/2018/07/Home-Page-Banner_VoteOpen.jpg" alt="" width="100%"></a></div>
   </div>
-  <div class="column">
-    <h1>Hello again</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, pariatur.</p>
+  <div class="column2">
+    <div class="bestofdenton"><a href="http://bestofdentoncounty.com/" target="_blank"><img src="assets/bestofdenton.png" alt="" width="100%"></a></div>
   </div>
+</div> -->
+
+
+<!-- Section C -->
+<div id="section-c" class="gridc" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-in">
+  <div class="summerover"><img src="assets/summeralmostover.png" alt="" width="100%"></div>
 </div>
 
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
