@@ -1,12 +1,9 @@
 @import url("https://use.typekit.net/bbd8hsf.css");
 
 body {
-  font-family: "brandon-grotesque",sans-serif;
-  font-size: 1em;
-  background-color: #fff;
+  font-family: "europa";
 }
 
-/* E Times Cover */
 #cover {
   background-color: #FE052C;
   height: 810px;
@@ -23,8 +20,18 @@ body {
   max-width: 600px;
 }
 
+#animateBtn {
+  color: #fff;
+  border: solid .2em #fff;
+}
 
-.btn {
+#animateBtn:hover {
+  color: #FE052C;
+  background-color: #fff;
+  border: none;
+}
+
+.btnc {
   background-color: none;
   border: 2px solid #fff;
   color: #fff;
@@ -36,105 +43,143 @@ body {
 }
 
 
-/* BOD MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,.4);
+.offers-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.modal-content {
-  background-color: #fff;
-  margin: 60% auto;
-  padding: 30px;
-  width: 60%;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
-}
 
-.closeBtn {
-  color: #F00a13;
-  float: right;
-  font-size: 2em;
-}
-
-.closeBtn:hover, .closeBtn:focus {
+.offers-1 .s1 {
+  display: flex;
+  flex-direction: column;
+  min-width: 270px;
+  max-width: 400px;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
   color: #000;
+}
+
+.offers-1 .s1 a {
   text-decoration: none;
-  cursor: pointer;
+  color: #000;
+  text-align: center;
 }
 
-
-/* Section A */
-
-#section-a, .staff {
-  display: inline-block;
-  background-color: inherit;
-  background-size: contain;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Section B */
-
-#section-b, .gridb {
+.offers-1 .s2 {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  min-width: 270px;
+  max-width: 400px;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  color: #000;
+}
+
+.offers-1 .s2 a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.offers-1 .s3 {
+  display: flex;
+  flex-direction: column;
+  min-width: 270px;
+  max-width: 400px;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  color: #000;
+}
+
+.offers-1 .s3 a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.btn {
+  padding: 7px 15px;
+  font-family: 'europa';
+  font-size: 1.5em;
+  color: blue;
+  border: solid blue 2px;
+  background: none;
+  transition: 200ms;
+}
+
+.btn:hover {
+  background: blue;
+  color: #fff;
+}
+
+.proshop {
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 100px;
 }
 
-/* -- Flex Basics for Responsive Website
-@media(min-width: 700px) {
-  #section-c, .gridc {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .columnc {
-    flex-basis: 27%;
-    padding: 20px;
-  }
-} */
-
-#section-c, .gridc {
+.proshop .proshop-img1 {
   display: flex;
+  max-width: 500px;
+  padding-right: 40px;
+  margin-left: 20px;
 }
 
-.gridd1 {
-  display: inline-flex;
+.proshop .proshop-content1 {
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  max-width: 200px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding-bottom: 30px;
 }
 
-.augustcamp-content {
-  display: inline-flex;
-  text-align: center;
-  flex-direction: column;
-  margin: 5px;
-  padding-bottom: 60px;
-  padding-left: 10%;
-  padding-right: 10%;
+.proshop .proshop-content1 .item-title {
+  border-bottom: solid #000 1.5px;
 }
 
-button, .btnred {
+.btn2 {
+  margin-top: 20px;
+  padding: 7px 15px;
+  border-radius: 8px;
+  font-family: 'europa';
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  background: #FC3438;
+  transition: 200ms;
+}
+
+.btn2:hover {
+  background: none;
+  font-size: 1.2em;
+  border: solid #FC3438 1px;
+  color: #FC3438;
+}
+
+.next-page-button {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.next-page {
+  display: flex;
+  font-family: 'europa';
+  font-size: 1.5em;
+  text-decoration: none;
   background-color: #fff;
-  border: 2px solid #ff0f27;
-  color: #ff0f27;
-  margin: auto;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 1.25em;
-}
-
-.btnred, a {
-  text-decoration: none;
-  color: #ff0f27;
-  font-size: 1em;
+  color: blue;
+  border: solid 1.5px blue;
+  border-radius: 100%;
+  padding: 10px 17px;
 }
