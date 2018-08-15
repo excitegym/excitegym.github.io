@@ -1,0 +1,525 @@
+@import url("https://use.typekit.net/bbd8hsf.css");
+
+body {
+  font-family: "europa",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: auto 0;
+  justify-items: center;
+  background-color: #fff;
+  color: #000;
+}
+
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr .5fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.main .content1 {
+  position: relative;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 10px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+
+.main .logomark {
+  position: relative;
+  font-size: 1.5em;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+.logomark {
+  transition: 3000ms ease-in;
+}
+
+@media (min-width:660px) {
+  .main .logomark {
+    position: relative;
+    font-size: 1.5em;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    max-width: 660px;
+    margin-top: -50px;
+  }
+
+  .main .content1 {
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin-top: -50px;
+    padding: 10px;
+  }
+
+  .inspire-content {
+    max-width: 900px;
+    margin-bottom: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.main button {
+  background-color: #FFF;
+  color: #ff0031;
+  text-decoration: none;
+  border: none;
+  font-family: "brandon-grotesque",sans-serif;
+  font-size: 3em;
+  transition: 200ms;
+}
+
+.main button:hover {
+  background-color: #ff0031;
+  color: #fff;
+  border: #ffbfea 1px solid;
+  border-radius: 100%;
+  padding: 0px 12px 0px 13px;
+}
+
+.pg1 {
+  display: none;
+}
+
+#cover {
+  display: grid;
+  grid-template-rows: .7fr .7fr;
+  justify-content: center;
+}
+
+.hider {
+  display: none;
+}
+
+#page2  {
+  display: grid;
+  grid-template-rows: 1fr .6fr 0.25fr;
+  justify-items: center;
+  overflow: hidden;
+}
+
+#page3  {
+  display: grid;
+  grid-template-rows: .5fr .01fr 0.5fr;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 760px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 400ms ease-in-out;
+}
+
+
+.showing {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.content h1, .practice-sched h2 {
+  font-family: "brandon-grotesque";
+  font-weight: 8;
+  font-size: 3.5em;
+  text-align: center;
+  border-bottom: solid 1px #f1f1f1;
+  padding-bottom: 20px;
+}
+
+.content p, .practice-sched p  {
+  color: #6d6d6d;
+  margin-top: -20px;
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 15px;
+}
+
+#hs-details {
+  display: grid;
+  grid-template-rows: .75fr 1fr;
+  justify-items: center;
+  text-align: center;
+  max-width: 750px;
+}
+
+.practice-sched {
+  max-width: 760px;
+  position: relative;
+  jusify-content: center;
+}
+
+@media (min-width: 660px) {
+  #mini-youth-tiny {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 25px;
+  }
+
+  #mini-youth-tiny h3 {
+    font-size: 2em;
+  }
+
+  .flying-kid {
+    position: absolute;
+    margin-top: 1700px;
+    margin-left: 500px;
+  }
+
+}
+
+.flying-kid {
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/cheer-fall.png');
+  background-repeat:no-repeat;
+  position: absolute;
+  background-size: cover;
+  overflow: hidden;
+  height: 332px;
+  width: 320px;
+  margin-top: 1900px;
+  z-index: -1;
+  margin-left: 20%;
+}
+
+.practice-sched h3 {
+  font-family: "brandon-grotesque";
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+
+.hsbutton button {
+  margin: auto;
+  text-decoration: none;
+  border: none;
+  background-color: #04041a;
+  color: #fff;
+  font-family: "brandon-grotesque";
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 5px 10px 5px 10px;
+  transition: ease-in-out 300ms;
+}
+
+.hsbutton {
+  margin-top: -38%;
+  text-align:center;
+}
+
+.hsbutton button:hover {
+  color: #04041a;
+  border: #04041a solid 0.5px;
+  background-color: #fff;
+}
+
+.halfbox {
+  position: relative;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/stripes.png');
+  background-position: top center;
+  background-size: cover;
+  height: 760px;
+  width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.foreground-kid {
+  width: 500px;
+  height: 595px;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/cheer-jump-fists.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 20%;
+  margin-top: -50px;
+}
+
+
+.half-season-logo {
+  position: absolute;
+  top: 35%;
+  margin-top: -50px;
+  height: 250px;
+  width: 100%;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/half-season-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pg2next {
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pg2next button {
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  color: #ff0031;
+  font-size: 3em;
+}
+
+#inspirepg {
+  display: grid;
+  grid-template-rows: .6fr .1fr 0.1fr;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.inspire-halfbox {
+  display: grid;
+  grid-template-rows: .15fr;
+  position: relative;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/zig-zag-lines-1.svg');
+  background-position: top center;
+  background-size: cover;
+  height: 760px;
+  width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.inspire-logo {
+  position: absolute;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/inspire-logo-3.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  top: 55%;
+  overflow: hidden;
+}
+
+.inspire-team {
+    width: 100%;
+    text-align: center;
+    font-size: 1.15em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.concentric-circles {
+  position: absolute;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/concentric-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  top: 15%;
+  overflow: hidden;
+  margin-left: -250px;
+}
+
+@media (max-width: 600px) {
+  .inspire-picture {
+    margin-top: 200px;
+  }
+}
+
+.inspire-picture {
+  background-color: inherit;
+  position:relative;
+  max-width: 600px;
+  align-items: center top;
+}
+
+@media (max-width: 500px) {
+
+.bottom-stuff {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/circular.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  margin-top: -150%;
+}
+}
+@media (min-width: 500px) {
+
+.bottom-stuff {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/circular.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  margin-top: -30%;
+}
+}
+
+.yellowbox {
+  position: relative;
+  height: 60px;
+  width: 110%;
+  transform: rotate(-4deg);
+  background-color: yellow;
+  opacity: 0.8;
+  z-index: -1;
+  margin-top: -95px;
+}
+
+.halfbox3 {
+  position: relative;
+  background: radial-gradient(circle farthest-side at center, #f93854,#fc0b27);
+  background-position: top center;
+  background-size: cover;
+  height: 760px;
+  width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+@media (max-width: 660px) {
+
+  #offers {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 900px;
+    grid-gap: 20px;
+    text-align: center;
+
+  }
+
+  .campdays-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/campdayslogo1.svg');
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -50%;
+    left: 50px;
+    transform: rotate(0deg);
+  }
+
+  .pno-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/pno-logo.svg');
+    height: 225px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 25%;
+    right: 20%;
+    transform: rotate(0deg);
+  }
+
+  .dayplay-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/dayplaylogo.svg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:10%;
+    right: 0%;
+    transform: rotate(-30deg);
+  }
+}
+
+@media (min-width: 660px) {
+  #offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    grid-gap: 20px;
+    text-align: center;
+
+  }
+
+  .campdays-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/campdayslogo1.svg');
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -60%;
+    left: 130px;
+  }
+
+  .pno-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/pno-logo.svg');
+    height: 325px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 25%;
+    right: 10%;
+    transform: rotate(0deg);
+  }
+
+  .dayplay-logo {
+    position: relative;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/dayplaylogo.svg');
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:10%;
+    right: 0%;
+    transform: rotate(-30deg);
+  }
+}
+
+.dayplay-logo1 {
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/dayplaylogo.svg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pno-logo1 {
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/pnoblack-logo.svg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(25deg)
+}
+
+.campdays-logo1 {
+  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/campdayslogo1.svg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
