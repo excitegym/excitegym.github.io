@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'walsheim';
+  src: url('../css/fonts/gt-walsheim-ultra-bold.woff') format('woff');
+}
 @import url("https://use.typekit.net/bbd8hsf.css");
 
 body {
@@ -543,4 +547,22 @@ p {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.clinics-title {
+  font-family: 'walsheim';
+  font-size: 2.3em;
+  margin-left: 20px;
+  letter-spacing: -4px;
+}
+
+.clinic-schedule {
+  margin-top: -60px;
+}
+
+.clinic-schedule span {
+  background: black;
+  color: #fff;
+  padding: 3px 10px 3px 10px;
+  font-size: 1.4em;
 }
