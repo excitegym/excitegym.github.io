@@ -301,16 +301,7 @@ p {
   justify-content: center;
 }
 
-.inspire-logo {
-  position: absolute;
-  background-image: url('https://excitegym.com/wp-content/uploads/2016/07/inspire-logo-3.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 300px;
-  width: 100%;
-  top: 55%;
-  overflow: hidden;
-}
+
 
 .inspire-team {
     width: 100%;
@@ -332,18 +323,48 @@ p {
   margin-left: -250px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .inspire-picture {
-    margin-top: 200px;
+    background-color: inherit;
+    position:relative;
+    max-width: 600px;
+    align-items: center top;
+    margin-top: 70px;
+  }
+
+  .inspire-logo {
+    position: absolute;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/inspire-logo-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    top: 40%;
+    overflow: hidden;
+  }
+
+}
+
+@media (min-width: 550px) {
+  .inspire-picture {
+    background-color: inherit;
+    position:relative;
+    max-width: 600px;
+    align-items: center top;
+  }
+
+  .inspire-logo {
+    position: absolute;
+    background-image: url('https://excitegym.com/wp-content/uploads/2016/07/inspire-logo-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    top: 60%;
+    overflow: hidden;
   }
 }
 
-.inspire-picture {
-  background-color: inherit;
-  position:relative;
-  max-width: 600px;
-  align-items: center top;
-}
 
 @media (max-width: 500px) {
 
